@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:textColor="@color/material_black"
+        android:text="选择拍照或者相册"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@color/material_grey_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/tvTakePhoto"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@color/material_deepOrange_300"
+        app:layout_constraintEnd_toStartOf="@+id/line2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <TextView
+        android:id="@+id/tvOpenAlbum"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="@color/material_deepOrange_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="1px"
+        android:layout_height="40dp"
+        android:background="@color/material_grey_400"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTakePhoto"
+        app:layout_constraintEnd_toStartOf="@+id/tvOpenAlbum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTakePhoto"
+        app:layout_constraintTop_toTopOf="@+id/tvTakePhoto" />
+
+</android.support.constraint.ConstraintLayout>

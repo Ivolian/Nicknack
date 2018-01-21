@@ -1,4 +1,4 @@
-package com.ivotai.nicknack.custom
+package com.ivotai.nicknack.general
 
 import android.content.Context
 import android.graphics.Color
@@ -6,12 +6,11 @@ import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.StateListDrawable
 import android.support.v4.graphics.ColorUtils
+import android.support.v7.widget.AppCompatButton
 import android.util.AttributeSet
 import android.view.Gravity
-import android.widget.Button
-import android.widget.TextView
 
-class RoundCornerButton:Button {
+class RoundCornerButton:AppCompatButton {
 
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
